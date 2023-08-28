@@ -1,4 +1,4 @@
-name: update_data_model
+name: update_term_file_and_page
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ on:
 jobs:
   changed_files:
     runs-on: ubuntu-latest
-    name: checkout
+    name: update term files and pages
     steps:
       - uses: actions/checkout@v3
         with:
