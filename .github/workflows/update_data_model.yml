@@ -30,12 +30,12 @@ jobs:
           python term_file_manager.py
 
       - name: update term page if the availablity of term file changed
-        if: steps.changed-files-specific.outputs.data_added_files_count != 0 & steps.changed-files-specific.outputs.data_deleted_files_count != 0
+        if: steps.changed-files.outputs.data_added_files_count != 0 & steps.changed-files.outputs.data_deleted_files_count != 0
         run: |
           python term_page_manager.py
             
       - name: update template page if the availablity of term page changed
-        if: steps.changed-files-specific.outputs.page_modified_files_count != 0
+        if: steps.changed-files.outputs.page_modified_files_count != 0
         run: |
           python update_template_page.py
       
