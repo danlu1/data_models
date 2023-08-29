@@ -1,14 +1,14 @@
 ---
-layout: page
-title: ageAtDiagnosisUnit
 datatable: true
-parent: Clinical
+layout: page
+parent: NGS
+title: referenceSet
 ---
 
-{% assign mydata=site.data.ageAtDiagnosisUnit %}
-{: .highlight }
-AgeAtDiagnosisUnit is the unit of age at diagnosis.
-
+{% assign mydata=site.data.referenceSet %} 
+{: .highlight } 
+**referenceSet:**
+A set of references (e.g., canonical assembled contigs) which defines a common coordinate space for comparing reference-aligned experimental data. [[Source]](nan)
 <table id="myTable" class="display" style="width:100%">
     <thead>
     {% for column in mydata[0] %}

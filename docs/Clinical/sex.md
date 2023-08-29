@@ -1,14 +1,14 @@
 ---
-layout: page
-title: sex
 datatable: true
+layout: page
 parent: Clinical
+title: sex
 ---
 
-{% assign mydata=site.data.sex %}
-{: .highlight }
-Sex indicates the biological sex of the study participant.
-
+{% assign mydata=site.data.sex %} 
+{: .highlight } 
+**sex:**
+The biological sex of the study participant [[Source]](https://ncithesaurus.nci.nih.gov/ncitbrowser/pages/concept_details.jsf?dictionary=NCI_Thesaurus&version=22.07d&code=C28421&ns=ncit)
 <table id="myTable" class="display" style="width:100%">
     <thead>
     {% for column in mydata[0] %}
